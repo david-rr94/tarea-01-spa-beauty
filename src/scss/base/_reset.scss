@@ -1,16 +1,20 @@
-@use '../utils/variables' as *;
+@use "../utils/variables" as *;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 html * {
-    font-family: $text;
+  font-family: $text;
 }
 
 body {
-    overflow-x: hidden;
-    font-size: 16px;
+  overflow-x: hidden;
+  font-size: 16px;
 }
 
+html,
+body {
+  overflow: hidden;
+}

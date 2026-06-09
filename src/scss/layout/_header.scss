@@ -2,7 +2,8 @@
 @use "../utils/variables" as *;
 
 header.header__principal {
-  position: relative; // Ancla para posicionar la mujer y la loto de fondo
+  min-height: 100vh;
+  position: relative;
   background-color: $white;
   background-image: linear-gradient(90deg, $beige 68%, $cyan 68%);
   background-repeat: no-repeat;
