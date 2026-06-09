@@ -3,12 +3,144 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi Proyecto Base</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Tarea 01 - Spa & Beauty</title>
   </head>
-  <body>
-    
-    <h1>¡Vite + Sass funcionando!</h1>
 
+  <body>
+    <header class="header__principal">
+      <div class="container">
+        <div class="header__container">
+          <a href="#" class="header__logo">
+            <img src="/images/logo-glowqueen.svg" alt="Logotipo página web" />
+          </a>
+          <nav class="header__menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Facilities</a></li>
+              <li>
+                <a href="#"
+                  >More
+                  <span
+                    ><svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M12 15C11.8684 15.0008 11.7379 14.9755 11.6161 14.9258C11.4942 14.876 11.3834 14.8027 11.29 14.71L7.28998 10.71C7.10168 10.5217 6.99589 10.2663 6.99589 10C6.99589 9.7337 7.10168 9.47831 7.28998 9.29C7.47828 9.1017 7.73368 8.99591 7.99998 8.99591C8.26628 8.99591 8.52168 9.1017 8.70998 9.29L12 12.59L15.29 9.3C15.4813 9.13618 15.7274 9.05057 15.979 9.06029C16.2307 9.07001 16.4694 9.17434 16.6475 9.35244C16.8256 9.53053 16.93 9.76927 16.9397 10.0209C16.9494 10.2726 16.8638 10.5187 16.7 10.71L12.7 14.71C12.5137 14.8947 12.2623 14.9989 12 15Z"
+                      /></svg></span
+                ></a>
+              </li>
+            </ul>
+          </nav>
+          <nav class="header__login">
+            <svg class="login--image"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_1126_405)">
+                <path
+                  d="M27.6133 25.72L23.08 21.2C24.5427 19.3366 25.3363 17.0355 25.3333 14.6667C25.3333 12.557 24.7077 10.4947 23.5357 8.74059C22.3636 6.98646 20.6977 5.61929 18.7486 4.81196C16.7996 4.00462 14.6548 3.79339 12.5857 4.20496C10.5166 4.61654 8.61596 5.63244 7.1242 7.1242C5.63244 8.61596 4.61654 10.5166 4.20496 12.5857C3.79339 14.6548 4.00462 16.7996 4.81196 18.7486C5.61929 20.6977 6.98646 22.3636 8.74059 23.5357C10.4947 24.7077 12.557 25.3333 14.6667 25.3333C17.0355 25.3363 19.3366 24.5427 21.2 23.08L25.72 27.6133C25.844 27.7383 25.9914 27.8375 26.1539 27.9052C26.3164 27.9729 26.4907 28.0077 26.6667 28.0077C26.8427 28.0077 27.017 27.9729 27.1794 27.9052C27.3419 27.8375 27.4894 27.7383 27.6133 27.6133C27.7383 27.4894 27.8375 27.3419 27.9052 27.1794C27.9729 27.017 28.0077 26.8427 28.0077 26.6667C28.0077 26.4907 27.9729 26.3164 27.9052 26.1539C27.8375 25.9914 27.7383 25.844 27.6133 25.72ZM6.66667 14.6667C6.66667 13.0844 7.13586 11.5377 8.01491 10.2221C8.89397 8.90652 10.1434 7.88114 11.6052 7.27564C13.067 6.67013 14.6755 6.51171 16.2274 6.82039C17.7792 7.12907 19.2047 7.891 20.3235 9.00982C21.4423 10.1286 22.2043 11.5541 22.513 13.1059C22.8216 14.6578 22.6632 16.2663 22.0577 17.7281C21.4522 19.1899 20.4268 20.4394 19.1112 21.3184C17.7956 22.1975 16.2489 22.6667 14.6667 22.6667C12.5449 22.6667 10.5101 21.8238 9.00982 20.3235C7.50953 18.8232 6.66667 16.7884 6.66667 14.6667Z"
+                  fill="currentColor"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_1126_405">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <svg class="login--elipse"
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M25.3333 9.33335H21.3333V8.00002C21.3333 6.58553 20.7714 5.22898 19.7712 4.22878C18.771 3.22859 17.4145 2.66669 16 2.66669C14.5855 2.66669 13.2289 3.22859 12.2287 4.22878C11.2285 5.22898 10.6666 6.58553 10.6666 8.00002V9.33335H6.66665C6.31302 9.33335 5.97389 9.47383 5.72384 9.72388C5.47379 9.97393 5.33331 10.3131 5.33331 10.6667L5.33331 25.3334C5.33331 26.3942 5.75474 27.4116 6.50489 28.1618C7.25503 28.9119 8.27245 29.3334 9.33331 29.3334H22.6666C23.7275 29.3334 24.7449 28.9119 25.4951 28.1618C26.2452 27.4116 26.6666 26.3942 26.6666 25.3334V10.6667C26.6666 10.3131 26.5262 9.97393 26.2761 9.72388C26.0261 9.47383 25.6869 9.33335 25.3333 9.33335ZM13.3333 8.00002C13.3333 7.29278 13.6143 6.6145 14.1144 6.1144C14.6145 5.61431 15.2927 5.33335 16 5.33335C16.7072 5.33335 17.3855 5.61431 17.8856 6.1144C18.3857 6.6145 18.6666 7.29278 18.6666 8.00002V9.33335H13.3333V8.00002ZM24 25.3334C24 25.687 23.8595 26.0261 23.6095 26.2762C23.3594 26.5262 23.0203 26.6667 22.6666 26.6667H9.33331C8.97969 26.6667 8.64055 26.5262 8.3905 26.2762C8.14046 26.0261 7.99998 25.687 7.99998 25.3334L7.99998 12H10.6666V13.3334C10.6666 13.687 10.8071 14.0261 11.0572 14.2762C11.3072 14.5262 11.6464 14.6667 12 14.6667C12.3536 14.6667 12.6927 14.5262 12.9428 14.2762C13.1928 14.0261 13.3333 13.687 13.3333 13.3334V12H18.6666V13.3334C18.6666 13.687 18.8071 14.0261 19.0572 14.2762C19.3072 14.5262 19.6464 14.6667 20 14.6667C20.3536 14.6667 20.6927 14.5262 20.9428 14.2762C21.1928 14.0261 21.3333 13.687 21.3333 13.3334V12L24 12V25.3334Z"
+                fill="currentColor"
+              />
+            </svg>
+            <div class="login__btn">
+              <a href="#" class="login__btn--signin">Sign In</a>
+              <a href="#" class="login__btn--signup">Sign Up</a>
+            </div>
+          </nav>
+        </div>
+        <div class="hero">
+          <div class="hero__content">
+            <h1>Bring back the beauty and glow of your skin</h1>
+            <p>
+              We provide you various treatments from head to toe using the best
+              product, advanced technology, and affordable price
+            </p>
+          </div>
+          <div class="hero__buttons">
+            <a href="#" class="hero__btn--book">Book Now</a>
+            <a href="#" class="hero__btn--video">
+              <img src="/images/icon-play.svg" alt="Icono de reproducción" />
+              Watch Video
+            </a>
+          </div>
+          <div class="hero__reviews">
+            <div class="hero__review--a">
+              <img src="/images/icon-marks.svg" alt="Comillas" />
+              <p class="review__text">
+                I have a regular schedule to take treatment from GlowQueen, they
+                gave me the best service and treatment ever to maintain the
+                beauty and health of my skin
+              </p>
+              <h3 class="review__name">Sophia Princeton</h3>
+            </div>
+            <div class="hero__review--b">
+              <img src="/images/icon-marks.svg" alt="Comillas" />
+              <p class="review__text">
+                For the past few years, I've had a hard time finding the right
+                place for skin care to deal with my complicated skin condition,
+                thank God I found GlowQueen to treat my skin
+              </p>
+              <h3 class="review__name">Tamara Jules</h3>
+            </div>
+          </div>
+        </div>
+        <section class="hero__activities">
+          <article class="hero__item">
+            <img src="/images/icon-face.svg" alt="Icono de cara" />
+            <p class="item__number">15+</p>
+            <p class="item__description">Special Treatment</p>
+          </article>
+          <article class="hero__item">
+            <img src="/images/icon-lotus.svg" alt="Icono de flor de loto" />
+            <p class="item__number">25+</p>
+            <p class="item__description">Professional Therapist</p>
+          </article>
+          <article class="hero__item">
+            <img src="/images/icon-mortar.svg" alt="Icono de mortero" />
+            <p class="item__number">100%</p>
+            <p class="item__description">Herbal Cream Formula</p>
+          </article>
+        </section>
+      </div>
+      <!-- Imagen de la mujer colocada directamente en el header para que abarque hasta abajo -->
+      <div class="hero__image">
+        <img src="/images/bg-woman.png" alt="Mujer con piel radiante" />
+      </div>
+    </header>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>

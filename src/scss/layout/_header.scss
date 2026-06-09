@@ -1,0 +1,125 @@
+@use "../utils/mixins" as *;
+@use "../utils/variables" as *;
+
+header.header__principal {
+  position: relative; // Ancla para posicionar la mujer y la loto de fondo
+  background-color: $white;
+  background-image: linear-gradient(90deg, $beige 68%, $cyan 68%);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 100% calc(100% - 200px); // Deja los 260px finales en blanco
+
+  &::before {
+    content: "";
+    position: absolute;
+    right: 10%; // Posición horizontal de la loto
+    top: 150px;
+    width: 473px;
+    height: 437px;
+    background-image: url("/images/bg-hero.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.08;
+    pointer-events: none;
+  }
+
+  // Capa para que los textos y enlaces queden encima del fondo y la flor
+  .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .header__container {
+    padding-top: 33px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .header__logo {
+      margin-right: 164px;
+      img {
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .header__menu {
+      display: flex;
+      align-items: center;
+      margin-right: 251px;
+      ul {
+        @include reset-list;
+        gap: 56px;
+        li {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          a {
+            color: $dark-blue;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.3s ease;
+            &:hover {
+              color: $cyan;
+            }
+            span {
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  .header__login {
+    display: flex;
+    align-items: center;
+
+    .login--image {
+      margin-right: 32px;
+    }
+
+    .login--elipse {
+      margin-right: 74px;
+    }
+
+    .login--image,
+    .login--elipse {
+      color: $dark-blue;
+      transition: transform 0.3s ease;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    .login__btn {
+      @include reset-list;
+      align-items: center;
+      gap: 40px;
+
+      .login__btn--signin {
+        @include link-text;
+        padding: 10px 0;
+        transition: 0.3s ease;
+        &:hover {
+          font-weight: 600;
+        }
+      }
+
+      .login__btn--signup {
+        @include button-pill;
+        padding: 12px 24px;
+        transition:
+          color 0.3s ease,
+          background-color 0.3s ease;
+        &:hover {
+          color: $dark-blue;
+          font-weight: 600;
+          background-color: $cyan;
+        }
+      }
+    }
+  }
+}

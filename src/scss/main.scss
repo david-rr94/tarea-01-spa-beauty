@@ -1,13 +1,11 @@
 // Utils
-@use 'utils/variables';
-@use 'utils/mixins';
+@use 'utils';
 
 // Base
-@use 'base/reset';
-@use 'base/typography';
+@use 'base';
 
 // Layout
-@use 'layout/header';
+@use 'layout';
 
 // Components
-@use 'components/buttons';
+@use 'components';

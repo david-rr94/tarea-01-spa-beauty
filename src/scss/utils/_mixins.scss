@@ -1,0 +1,62 @@
+@use "variables" as *;
+
+// Resolution Responsive
+
+// @mixin responsive($bp) {
+//   @if $bp == tablet {
+//     @media (min-width: $bp-tablet) {
+//       @content;
+//     }
+//   }
+//   @if $bp == tablet-horizontal {
+//     @media (min-width: $bp-tablet-horizontal) {
+//       @content;
+//     }
+//   }
+//   @if $bp == desktop {
+//     @media (min-width: $bp-desktop) {
+//       @content;
+//     }
+//   }
+//   @if $bp == desktop-xl {
+//     @media (min-width: $bp-desktop-xl) {
+//       @content;
+//     }
+//   }
+// }
+
+// Botones
+
+@mixin button-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: $text;
+  color: $white;
+  font-weight: 500;
+  background-color: $dark-blue;
+  text-decoration: none;
+  border-radius: 99px;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+@mixin link-text {
+  display: inline-flex;
+  align-items: center;
+  font-family: $text;
+  color: $dark-blue;
+  font-weight: 500;
+  text-decoration: underline;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+// List
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}

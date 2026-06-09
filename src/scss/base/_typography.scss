@@ -1,0 +1,12 @@
+@use '../utils/variables' as *;
+
+body {
+    font-family: $text;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    font-family: $text;
+    font-weight: 700;
+}
